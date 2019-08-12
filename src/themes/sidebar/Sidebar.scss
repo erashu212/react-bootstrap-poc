@@ -1,0 +1,29 @@
+.ps-sidebar {
+  top: 0.25rem;
+  padding: 0 !important;
+  position: sticky;
+  z-index: 1000;
+  height: calc(100vh - 0.25rem);
+  background: #4071b0;
+  border-right: 1px solid #ececec;
+  color: white;
+  .ps-links {
+    .nav-item {
+      padding: 0;
+      .ps-side-icon {
+        padding-right: 10px;
+      }
+      &.ps-child-item {
+        font-size: 85%;
+        padding-left: 25px;
+      }
+      list-style: none;
+      .ps-side-link {
+        padding: 0.25rem;
+        * {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
