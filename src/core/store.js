@@ -1,8 +1,8 @@
 import { createStore, applyMiddleware } from "redux";
 
 import rootReducer from "./reducers/index";
-import { apiInterceptor } from "./middlewares/api.interceptor";
+import httpInterceptor from "./middlewares/http.interceptor";
 
-const store = createStore(rootReducer, applyMiddleware(apiInterceptor));
+const store = createStore(rootReducer, applyMiddleware(httpInterceptor));
 
 export default store;

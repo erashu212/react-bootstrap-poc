@@ -1,4 +1,4 @@
-const BASE_URL = 'https://abc.com/api';
+const BASE_URL = "https://abc.com/api";
 const DEFAULT_HEADERS = {
   "Content-Type": "application/json"
 };
@@ -23,7 +23,7 @@ const dispatchAtion = dispatch => cb => args => {
   }
 };
 
-const apiInterceptor = store => next => action => {
+const httpInterceptor = store => next => action => {
   console.log("API Interceptor", action);
   if (action.http) {
     const {
@@ -71,4 +71,4 @@ const apiInterceptor = store => next => action => {
   }
 };
 
-export { apiInterceptor };
+export default httpInterceptor;
